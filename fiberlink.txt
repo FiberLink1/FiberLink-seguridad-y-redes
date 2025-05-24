@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FiberLink - Fibra Óptica, CCTV y Cableado Estructurado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1E3D6B',secondary:'#4A90E2'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Roboto', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(30, 61, 107, 0.9), rgba(30, 61, 107, 0.7), rgba(30, 61, 107, 0.5), rgba(30, 61, 107, 0.3), rgba(30, 61, 107, 0.1)), url('https://readdy.ai/api/search-image?query=professional%2520fiber%2520optic%2520installation%2520with%2520blue%2520light%2520effects%252C%2520technician%2520working%2520with%2520cables%252C%2520high%2520tech%2520networking%2520environment%252C%2520clean%2520modern%2520server%2520room%252C%2520blue%2520tones%252C%2520professional%2520photography%252C%2520high%2520resolution&width=1200&height=600&seq=fiber1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #4A90E2;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.service-card {
+transition: all 0.3s ease;
+}
+.contact-button {
+transition: all 0.3s ease;
+}
+.contact-button:hover {
+transform: scale(1.05);
+}
+.whatsapp-button {
+animation: pulse 2s infinite;
+}
+@keyframes pulse {
+0% {
+box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+}
+70% {
+box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+}
+100% {
+box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+}
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Barra de contacto superior -->
+<div class="bg-gray-100 py-2">
+<div class="container mx-auto px-4 flex justify-between items-center">
+<div class="flex items-center space-x-6">
+<div class="flex items-center text-gray-700">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="text-sm">+54 11-6463-2121</span>
+</div>
+<div class="flex items-center text-gray-700">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<span class="text-sm">contacto.fiberlink@gmail.com</span>
+</div>
+</div>
+<div>
+<button class="bg-secondary text-white px-4 py-1 !rounded-button text-sm font-medium hover:bg-opacity-90 whitespace-nowrap">
+Contactar ahora
+</button>
+</div>
+</div>
+</div>
+<!-- Header con navegación -->
+<header class="bg-primary text-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center justify-between py-4">
+<div class="text-center md:text-left mb-4 md:mb-0">
+<img src="https://static.readdy.ai/image/6a5261677fc5e6eabc4c3e239448e5eb/546ef72045d9c2fba5814444c4c0228d.png" alt="FiberLink Logo" class="h-12">
+</div>
+<nav>
+<ul class="flex space-x-1 md:space-x-6">
+<li><a href="#" class="px-3 py-2 hover:bg-secondary !rounded-button block whitespace-nowrap">Inicio</a></li>
+<li><a href="#servicios" class="px-3 py-2 hover:bg-secondary !rounded-button block whitespace-nowrap">Servicios</a></li>
+<li><a href="#nosotros" class="px-3 py-2 hover:bg-secondary !rounded-button block whitespace-nowrap">Nosotros</a></li>
+<li><a href="#proyectos" class="px-3 py-2 hover:bg-secondary !rounded-button block whitespace-nowrap">Proyectos</a></li>
+<li><a href="#contacto" class="px-3 py-2 hover:bg-secondary !rounded-button block whitespace-nowrap">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section py-20 md:py-32 w-full">
+<div class="container mx-auto px-4 w-full">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Soluciones de Videovigilancia, Cableado Estructurado y Fibra Óptica</h2>
+<p class="text-white text-lg mb-8">Especialistas en instalación, mantenimientos preventivos y correctivos de fibra óptica, CCTV y cableado estructurado para empresas, Hogares e Industrias.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#contacto" class="bg-secondary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 text-center whitespace-nowrap contact-button">Solicitar Presupuesto</a>
+<a href="#servicios" class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 text-center whitespace-nowrap">Nuestros Servicios</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Servicios -->
+<section id="servicios" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-primary mb-4">Nuestros Servicios</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Ofrecemos soluciones integrales en conectividad y seguridad electrónica para empresas, instituciones y residencias.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Servicio 1 -->
+<div class="service-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-wifi-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Fibra Óptica</h3>
+<p class="text-gray-600 mb-4">Instalación, fusión y certificación de redes de fibra óptica para empresas y proveedores de internet. Garantizamos máxima velocidad y estabilidad.</p>
+<ul class="text-gray-600 space-y-2 mb-4">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Tendido de fibra óptica aérea y subterránea</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Fusiones y certificaciones profesionales</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Mantenimiento preventivo y correctivo</span>
+</li>
+</ul>
+<a href="#contacto" class="text-secondary font-medium hover:underline inline-flex items-center">
+Más información
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Servicio 2 -->
+<div class="service-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-cctv-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Sistemas de CCTV</h3>
+<p class="text-gray-600 mb-4">Diseño e instalación de sistemas de videovigilancia IP y analógicos con tecnología de última generación para monitoreo local y remoto.</p>
+<ul class="text-gray-600 space-y-2 mb-4">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Cámaras IP de alta definición</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Grabadores NVR y DVR profesionales</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Monitoreo remoto desde dispositivos móviles</span>
+</li>
+</ul>
+<a href="#contacto" class="text-secondary font-medium hover:underline inline-flex items-center">
+Más información
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Servicio 3 -->
+<div class="service-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-base-station-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Cableado Estructurado</h3>
+<p class="text-gray-600 mb-4">Implementación de sistemas de cableado estructurado, Cañerías Daisa/ Bandeja / Aéreo - Cablecanal.</p>
+<ul class="text-gray-600 space-y-2 mb-4">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Cableado UTP/STP categorías 5e, 6 y 6A</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Instalación de racks y organizadores</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span>Certificación con equipos profesionales</span>
+</li>
+</ul>
+<a href="#contacto" class="text-secondary font-medium hover:underline inline-flex items-center">
+Más información
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Nosotros -->
+<section id="nosotros" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=professional%2520team%2520of%2520technicians%2520working%2520with%2520fiber%2520optic%2520cables%2520in%2520a%2520modern%2520office%2520environment%252C%2520wearing%2520blue%2520uniforms%252C%2520using%2520specialized%2520equipment%252C%2520collaborative%2520workspace%252C%2520clean%2520and%2520organized%2520setting%252C%2520professional%2520photography&width=600&height=400&seq=team1&orientation=landscape"
+alt="Equipo FiberLink"
+class="rounded-lg shadow-lg object-cover object-top w-full h-auto">
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-3xl font-bold text-primary mb-4">Sobre Nosotros</h2>
+<p class="text-gray-600 mb-6">En <span class="font-semibold">FiberLink</span> contamos con más de 10 años de experiencia brindando soluciones tecnológicas de alta calidad. Nuestro equipo está formado por técnicos certificados con amplia trayectoria en el sector.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-medal-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 mb-1">Experiencia</h3>
+<p class="text-gray-600">Más de una década brindando soluciones tecnológicas de calidad.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-team-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 mb-1">Equipo Profesional</h3>
+<p class="text-gray-600">Técnicos certificados y en constante capacitación.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-customer-service-2-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 mb-1">Atención Personalizada</h3>
+<p class="text-gray-600">Servicio adaptado a las necesidades específicas de cada cliente.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-tools-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 mb-1">Equipamiento Avanzado</h3>
+<p class="text-gray-600">Utilizamos herramientas y tecnología de última generación.</p>
+</div>
+</div>
+</div>
+<a href="#contacto" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 inline-block whitespace-nowrap">Trabajemos Juntos</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Proyectos -->
+<section id="proyectos" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-primary mb-4">Proyectos Destacados</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Conoce algunos de nuestros trabajos más relevantes en diferentes sectores.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Proyecto 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://static.readdy.ai/image/6a5261677fc5e6eabc4c3e239448e5eb/76ac5979d95ee784dfdbd9759b7ab222.jpeg"
+alt="Proyecto Corporativo"
+class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Red Corporativa</h3>
+<p class="text-gray-600 mb-4">Implementación de red de fibra óptica y cableado estructurado para sede corporativa.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Fibra Óptica</span>
+<span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Cableado Cat6A</span>
+<span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Certificación</span>
+</div>
+<a href="#contacto" class="text-secondary font-medium hover:underline inline-flex items-center">
+Ver detalles
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Proyecto 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=shopping%2520mall%2520security%2520system%2520with%2520CCTV%2520cameras%2520installation%252C%2520multiple%2520monitors%2520showing%2520surveillance%2520footage%252C%2520security%2520room%252C%2520professional%2520setup%252C%2520modern%2520retail%2520environment%252C%2520high%2520quality%2520equipment%252C%2520professional%2520photography&width=400&height=250&seq=proj2&orientation=landscape"
+alt="Proyecto Centro Comercial"
+class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Sistema CCTV/ IP para Portería</h3>
+<p class="text-gray-600 mb-4">Instalación de sistema de videovigilancia con 32 cámaras IP </p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">CCTV</span>
+<span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Cámaras IP</span>
+<span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Monitoreo</span>
+</div>
+<a href="#contacto" class="text-secondary font-medium hover:underline inline-flex items-center">
+Ver detalles
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Proyecto 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=residential%2520complex%2520with%2520fiber%2520optic%2520installation%252C%2520modern%2520apartment%2520buildings%252C%2520technician%2520installing%2520fiber%2520cables%252C%2520network%2520cabinet%2520in%2520building%252C%2520clean%2520installation%252C%2520professional%2520work%252C%2520high%2520quality%2520equipment%252C%2520professional%2520photography&width=400&height=250&seq=proj3&orientation=landscape"
+alt="Proyecto Residencial"
+class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Conectividad Residencial</h3>
+<p class="text-gray-600 mb-4"></p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"></span>
+<span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Domótica</span>
+<span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Seguridad</span>
+</div>
+<a href="#contacto" class="text-secondary font-medium hover:underline inline-flex items-center">
+Ver detalles
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="#contacto" class="bg-white text-primary border border-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap inline-block">Ver Todos los Proyectos</a>
+</div>
+</div>
+</section>
+<!-- Testimonios -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-primary mb-4">Lo Que Dicen Nuestros Clientes</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">La satisfacción de nuestros clientes es nuestro mayor logro. Conoce sus experiencias trabajando con nosotros.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonio 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">El equipo fue muy profesional y la calidad del trabajo es excelente.</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-gray-600"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800">Martín Rodríguez</h4>
+<p class="text-gray-600 text-sm">IT</p>
+</div>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">"Contratamos a FiberLink para instalar el sistema de CCTV en la empresa. El resultado ha sido excelente, con imágenes de alta calidad. El servicio post-venta también es impecable."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-gray-600"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800">Carolina Méndez</h4>
+<p class="text-gray-600 text-sm">Enc. Sistemas</p>
+</div>
+</div>
+</div>
+<!-- Testimonio 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">"La implementación del cableado estructurado en nuestras nuevas oficinas fue impecable. El equipo de FiberLink trabajó de manera ordenada y eficiente, cumpliendo con los plazos establecidos. Recomiendo ampliamente sus servicios."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-gray-600"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800">Gabriel Fernández</h4>
+<p class="text-gray-600 text-sm">Parque Industrial PIP</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto -->
+<section id="contacto" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-primary mb-4">Contacta con Nosotros</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Estamos listos para ayudarte con tu próximo proyecto. Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre</label>
+<input type="text" id="nombre" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-secondary" placeholder="Tu nombre">
+</div>
+<div>
+<label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-secondary" placeholder="Tu email">
+</div>
+</div>
+<div>
+<label for="telefono" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+<input type="tel" id="telefono" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-secondary" placeholder="Tu teléfono">
+</div>
+<div>
+<label for="servicio" class="block text-gray-700 font-medium mb-2">Servicio de Interés</label>
+<div class="relative">
+<select id="servicio" class="w-full px-4 py-3 border border-gray-300 rounded appearance-none focus:border-secondary pr-8">
+<option value="">Selecciona un servicio</option>
+<option value="fibra">Fibra Óptica</option>
+<option value="cctv">Sistemas de CCTV</option>
+<option value="cableado">Cableado Estructurado</option>
+<option value="otro">Otro</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div>
+<label for="mensaje" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+<textarea id="mensaje" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-secondary" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 w-full md:w-auto whitespace-nowrap">Enviar Mensaje</button>
+</form>
+</div>
+<div>
+<div class="bg-gray-50 p-8 rounded-lg h-full">
+<h3 class="text-2xl font-bold text-primary mb-6">Información de Contacto</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Dirección</h4>
+<a href="https://www.google.com.ar/maps/place/FiberLink.Bs.As./@-34.1594783,-58.9554698,16.5z/data=!4m6!3m5!1s0xedeed7fbabcfb67:0x28115904bb435345!8m2!3d-34.157829!4d-58.9565217!16s%2Fg%2F11lygd_tvq?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-gray-600 hover:text-gray-800">Juan Dellepiane 676<br>Campana, Bs.As - Argentina</a>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Teléfono</h4>
+<p class="text-gray-600">+54 11-6463-2121</p>
+<p class="text-gray-600">+54 11-2712-4629</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Email</h4>
+<p class="text-gray-600">contacto.fiberlink@gmail.com</p>
+<p class="text-gray-600"></p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Horario de Atención</h4>
+<p class="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
+<p class="text-gray-600">Sábados: 9:00 - 13:00</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-bold text-gray-800 mb-4">Síguenos en Redes Sociales</h4>
+<div class="flex space-x-4">
+<a href="https://www.facebook.com/fiberlink.campana" target="_blank" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90">
+<i class="ri-twitter-x-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Marcas -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-primary mb-4">Marcas que Trabajamos</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Nos asociamos con las mejores marcas del mercado para garantizar la más alta calidad en nuestros servicios.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+<div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-hik-fill text-4xl text-gray-700"></i>
+<span class="ml-2 font-semibold text-gray-700">HIKVISION</span>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-dah-fill text-4xl text-gray-700"></i>
+<span class="ml-2 font-semibold text-gray-700">DAHUA</span>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-wifi-fill text-4xl text-gray-700"></i>
+<span class="ml-2 font-semibold text-gray-700">TP-LINK</span>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-samsung-fill text-4xl text-gray-700"></i>
+<span class="ml-2 font-semibold text-gray-700">SAMSUNG</span>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-tools-fill text-4xl text-gray-700"></i>
+<span class="ml-2 font-semibold text-gray-700">BOSCH</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/5491164632121" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg z-50 whatsapp-button">
+<i class="ri-whatsapp-line text-2xl"></i>
+</a>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<img src="https://static.readdy.ai/image/6a5261677fc5e6eabc4c3e239448e5eb/546ef72045d9c2fba5814444c4c0228d.png" alt="FiberLink Logo" class="h-10 mb-4">
+<p class="text-gray-300 mb-4">Soluciones integrales en conectividad y seguridad electrónica para empresas.</p>
+<div class="flex space-x-4">
+<a href="https://www.facebook.com/fiberlink.campana" target="_blank" class="text-gray-300 hover:text-white">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="text-gray-300 hover:text-white">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="text-gray-300 hover:text-white">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="text-gray-300 hover:text-white">
+<i class="ri-twitter-x-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-white">Inicio</a></li>
+<li><a href="#servicios" class="text-gray-300 hover:text-white">Servicios</a></li>
+<li><a href="#nosotros" class="text-gray-300 hover:text-white">Nosotros</a></li>
+<li><a href="#proyectos" class="text-gray-300 hover:text-white">Proyectos</a></li>
+<li><a href="#contacto" class="text-gray-300 hover:text-white">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Servicios</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-white">Fibra Óptica</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">Sistemas de CCTV</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">Cableado Estructurado</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">Redes Inalámbricas</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">Mantenimiento</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contacto</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="ri-map-pin-line mr-2 mt-1"></i>
+<span>Juan Dellepiane 676, Campana - Bs.As - Argentina</span>
+</li>
+<li class="flex items-start">
+<i class="ri-phone-line mr-2 mt-1"></i>
+<span>+54 11-6463-2121</span>
+</li>
+<li class="flex items-start">
+<i class="ri-mail-line mr-2 mt-1"></i>
+<span>contacto.fiberlink@gmail.com</span>
+</li>
+<li class="flex items-start">
+<i class="ri-time-line mr-2 mt-1"></i>
+<span>Lun-Vie: 9:00 - 18:00
+Sáb: 09:00 - 13:00
+</span>
+</li>
+</ul>
+</div>
+</div>
+<hr class="border-gray-700 my-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 FiberLink. Todos los derechos reservados.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 text-sm hover:text-white">Política de Privacidad</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white">Términos y Condiciones</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="formScript">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form');
+if (form) {
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+// Validación básica
+const nombre = document.getElementById('nombre').value;
+const email = document.getElementById('email').value;
+const telefono = document.getElementById('telefono').value;
+const mensaje = document.getElementById('mensaje').value;
+if (!nombre || !email || !telefono || !mensaje) {
+alert('Por favor, completa todos los campos obligatorios.');
+return;
+}
+// Simulación de envío
+alert('¡Gracias por contactarnos! Te responderemos a la brevedad.');
+form.reset();
+});
+}
+});
+</script>
+<script id="scrollScript">
+document.addEventListener('DOMContentLoaded', function() {
+// Scroll suave para los enlaces de navegación
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
